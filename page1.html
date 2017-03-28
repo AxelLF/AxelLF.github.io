@@ -18,10 +18,11 @@
 	
 	</aside>
 	
-	<h1> HTML </h1>
-    <article id="structureHTML">  
+	
+    <article id="structureHTML">
+    <h2> HTML </h2>  
       <section>
-        <h2> Structure de base </h2> 
+        <h3> Structure de base </h3> 
         <p> html fonctionne avec des balises dans des chevrons: &lt;balise&gt;. On distingue deux types de balises: les balises ouvrantes et fermantes par paires et les balises auto-fermantes dites orphelines.</p> 
 	    <p> La première ligne donne la version d'html utlisée. HTML5 est obtenu avec &lt;!doctype html&gt;.    </p> 
 	    <p> Le contenu d'un document html est contenu dans la balise &lt;html&gt;.   </p>   
@@ -63,7 +64,7 @@
       </section>
 
       <section>	
-        <h2> Sectionnement du contenu </h2> 
+        <h3> Sectionnement du contenu </h3> 
         <p> Le contenu d'une page html peut être réparti dans différentes sections afin d'avoir une structure logique. Il s'agit ici d'une structure sémantique. </p>
         <p> Ces sections sont les suivantes : </p>
 	    <ul> 
@@ -113,43 +114,46 @@
     </article>
 
 	<article id="outilsHTML">
-      <h2>Outils HTML:</h2> 
-		
-  	  <h3>Mise en valeur du texte:</h3> 
-	  <p> Il est possible de faire ressortir du texte suivant trois degrés d'importance. </p>
-	  <p> Pour mettre un texte <em>un peu en valeur</em> on utilise:  <strong>&lt;em&gt; ... &lt;/em&gt;</strong>.</p>
-	  <p> Pour mettre un texte <strong>bien en valeur</strong> on utilise:  <strong>&lt;strong&gt; ... &lt;/strong&gt;</strong>.</p> 
-	  <p> Pour faire <mark> ressortir visuellement</mark> on utilise:  <strong>&lt;mark&gt; ... &lt/mark&gt;</strong>.</p> 
-	  <p> Sur la majorité des navigateurs &lt;em&gt; va mettre le texte en italique, &lt;strong&gt; va le mettre en gras et &lt;mark&gt; va le surligner.  </p>
-	  <p> <mark>Attention:</mark> Les balises &lt;br&gt; et &lt;hr&gt; sont des balises héritées des premières versions d'html. Ne pas les utiliser.</p>
-	
-	
-	  <h3> Les listes </h3> 
-	  <p> Il existe trois types de liste, ordonnées, désordonnées et les listes de définition. Celles-ci ont la structure suivante:</p>
-	  <p> Une liste ordonnée (entre balises &lt;ol&gt; ... &lt;ol&gt;):</p>   
-	  <ol> 
-        <li>Element ordonné 1 (chaque élément entre balises &lt;li&gt; ... &lt;li&gt;)</li> 
-	    <li>Element ordonné 2</li>
-	    <li>Element ordonné 2</li>
-      </ol>
-	  
-	  <p> Une liste désordonnée (entre balises &lt;ul&gt; ... &lt;ol&gt;:  </p>  
-	  
-	  <ul> 
-	    <li>Element desordonné 1 (chaque élément entre balises &lt;li&gt; ... &lt;li&gt;) </li>
-	    <li>Element desordonné 2</li>
-	    <li>Element desordonné 3</li>
-	  </ul>	
-	
-	  <p> Une liste de définition (entre balises &lt;dl&gt; ... &lt;dl&gt;:  </p>	
-	  
-	  <dl> 
-	    <dt> Le terme défini (chaque élément entre balises &lt;dt&gt; ... &lt;dt&gt;).</dt>
-        <dd>La définition(chaque élément entre balises &lt;dd&gt; ... &lt;dd&gt;).</dt></dd>
-	  </dl> 
+      <h3>Outils HTML:</h3> 
 
-      <h3> Les liens</h3> 
+      <section>			
+  	    <h3>Mise en valeur du texte:</h3> 
+	    <p> Il est possible de faire ressortir du texte suivant trois degrés d'importance. </p>
+	    <p> Pour mettre un texte <em>un peu en valeur</em> on utilise:  <strong>&lt;em&gt; ... &lt;/em&gt;</strong>.</p>
+	    <p> Pour mettre un texte <strong>bien en valeur</strong> on utilise:  <strong>&lt;strong&gt; ... &lt;/strong&gt;</strong>.</p> 
+	    <p> Pour faire <mark> ressortir visuellement</mark> on utilise:  <strong>&lt;mark&gt; ... &lt/mark&gt;</strong>.</p> 
+	    <p> Sur la majorité des navigateurs &lt;em&gt; va mettre le texte en italique, &lt;strong&gt; va le mettre en gras et &lt;mark&gt; va le surligner.  </p>
+	    <p> <mark>Attention:</mark> Les balises &lt;br&gt; et &lt;hr&gt; sont des balises héritées des premières versions d'html. Ne pas les utiliser.</p>
+      </section>		
 
+      <section>	
+	    <h3> Les listes </h3> 
+	    <p> Il existe trois types de liste, ordonnées, désordonnées et les listes de définition. Celles-ci ont la structure suivante:</p>
+	    <p> Une liste ordonnée (entre balises &lt;ol&gt; ... &lt;ol&gt;):</p>   
+	    <ol> 
+          <li>Element ordonné 1 (chaque élément entre balises &lt;li&gt; ... &lt;li&gt;)</li> 
+	      <li>Element ordonné 2</li>
+	      <li>Element ordonné 2</li>
+        </ol>
+	  
+	    <p> Une liste désordonnée (entre balises &lt;ul&gt; ... &lt;ol&gt;:  </p>  
+	  
+	    <ul> 
+	      <li>Element desordonné 1 (chaque élément entre balises &lt;li&gt; ... &lt;li&gt;) </li>
+	      <li>Element desordonné 2</li>
+	      <li>Element desordonné 3</li>
+	    </ul>	
+	
+	    <p> Une liste de définition (entre balises &lt;dl&gt; ... &lt;dl&gt;:  </p>	 
+	    <dl> 
+	      <dt> Le terme défini (chaque élément entre balises &lt;dt&gt; ... &lt;dt&gt;).</dt>
+          <dd>La définition(chaque élément entre balises &lt;dd&gt; ... &lt;dd&gt;).</dt></dd>
+	    </dl> 
+      </section>
+
+      <section>
+        <h3> Les liens</h3> 
+      <section>
     </article>
 	
 	    <footer>
