@@ -19,10 +19,9 @@
 	</aside>
 	
 	<h1> HTML </h1>
-    <section>
-      
+    <section id="structureHTML">  
       <h2> Structure de base </h2> 
-      <p> html fonctionne avec des balises dans des chevrons: &lt;balise&gt;. On distingue deux types de balises: les balises ouvrantes et fermantes par paires et les balises autofermantes dites orphelines.</p> 
+      <p> html fonctionne avec des balises dans des chevrons: &lt;balise&gt;. On distingue deux types de balises: les balises ouvrantes et fermantes par paires et les balises auto-fermantes dites orphelines.</p> 
 	  <p> La première ligne donne la version d'html utlisée. HTML5 est obtenu avec &lt;!doctype html&gt;.    </p> 
 	  <p> Le contenu d'un document html est contenu dans la balise &lt;html&gt;.   </p>   
 	  <p> Un document html doit contenir une entête &lt;head&gt; contenant les méta-informations du document et un corps &lt;body&gt; pour le contenu.  </p> 	  
@@ -58,12 +57,15 @@
         </code>
 	  </pre> 
 	
+
+
 	  <p> Le corps du document peut avoir différents contenus <em>(images, texte,...)</em>. Le texte peut être affiché sous forme de paragraphes définis en html par les balises &lt;p&gt; ... &lt;p&gt;. Pour afficher un texte formaté on utilise les balises &lt;pre&gt; ... &lt;pre&gt;, celles-ci peuvent inclure des balises &lt;code&gt; ... &lt;code&gt; pour indiquer que l'on écrit du code informatique.  </p>  
 	  <p> Les balises &lt;h&gt; et  &lt;p&gt; sont des éléments "blocs" 
 		<em>(ils s'affichent les uns en dessous des autres, dans le bloc le contenu essaye d'occuper tout l'espace disponible)</em>. Les autres éléments sont dis "en ligne"</em> (ils s'affichent les uns à la suite des autres)</em>.  
 	  </p> 
 
-		
+
+	
       <h2> Sectionnement du contenu </h2> 
       <p> Le contenu d'une page html peut être réparti dans différentes sections afin d'avoir une structure logique. Il s'agit ici d'une structure sémantique. </p>
       <p> Ces sections sont les suivantes : </p>
@@ -111,7 +113,9 @@
         &lt;/html&gt;
         </code>
 	  </pre> 
+    </section>
 
+	<section id="outilsHTML">
   	  <h2>Mise en valeur du texte:</h2> 
 	  <p> Il est possible de faire ressortir du texte suivant trois degrés d'importance. </p>
 	  <p> Pour mettre un texte <em>un peu en valeur</em> on utilise:  <strong>&lt;em&gt; ... &lt;/em&gt;</strong>.</p>
