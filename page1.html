@@ -232,7 +232,7 @@
             &lt;table&gt;
               &lt;caption&gt; La légende &lt;/caption&gt;
               &lt;thead&gt
-                &lt;th rowspan="2"&gt; &lt;/th&gt;
+                &lt;th rowspan="3"&gt; &lt;/th&gt;
               &lt;/thead&gt
               &lt;foot&gt
                 &lt;th&gt; &lt;/th&gt;
@@ -240,10 +240,12 @@
               &lt;tr&gt;
                 &lt;td&gt;A&lt;/td&gt;
                 &lt;td&gt;B&lt;/td&gt;
+                &lt;td&gt;C&lt;/td&gt;
               &lt;/tr&gt;
               &lt;tr&gt;
-                &lt;td&gt;C&lt;/td&gt;
                 &lt;td&gt;D&lt;/td&gt;
+                &lt;td&gt;E&lt;/td&gt;
+                &lt;td&gt;F&lt;/td&gt;
               &lt;/tr&gt;
             &lt;/table&gt;
           </code>
@@ -251,18 +253,20 @@
         <table>
           <caption>La légende du tableau</caption>       
           <thead>
-            <th rowspan="2">Entête</th>
+            <th rowspan="3">Entête</th>
           </thead>
           <tfoot>
-            <th rowspan="2">Pied</th>
+            <th rowspan="3">Pied</th>
           </tfoot>
           <tr>
             <td>A</td>
             <td>B</td>
+            <td>C</td>
           </tr>
           <tr>
-            <td>C</td>
             <td>D</td>
+            <td>E</td>
+            <td>F</td>
           </tr>
         </table>
         <p>A noter qu'il est possible de regrouper des colonnes en utilisant &lt;colgroup&gt; et &lt;col&gt;. Cette commande doit être placée en première ligne ou après caption.</p> 
