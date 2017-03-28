@@ -72,36 +72,36 @@
 	      <li> &lt;header&gt; pour du contenu en entête. </li>
 	      <li> &lt;nav&gt; pour une section ayant des liens vers d'autres pages ou vers une autre section de cette page. </li>
 	      <li> &lt;aside&gt; pour une section dont le contenu est séparé de la structure principale.  </li>
-          <li> &lt;article&gt; et &lt;section&gt; pour  </li>
-          <li> &lt;footer&gt; pour le pied de page de la section. </li>
+          <li> &lt;article&gt; représente du contenu autonome dans un document, une page, une application, ou un site</li>
+          <li> &lt;section&gt; représente une section générique d'un document. Une section commence généralement avec un titre.  </li>
+		  <li> &lt;footer&gt; pour le pied de page de la section. </li>
 	    </ul>
 
 	    <pre> 
           <code>
-          &lt;!doctype html&gt; 
-          &lt;html&gt;
+            &lt;!doctype html&gt; 
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;meta charset="utf-8" /&gt;
+                &lt;title&gt;  Titre du document &lt;/title&gt;  		
+              &lt;/head&gt; 
 
-            &lt;head&gt;
-              &lt;meta charset="utf-8" /&gt;
-              &lt;title&gt;  Titre du document &lt;/title&gt;  		
-            &lt;/head&gt; 
-	  
-            &lt;body&gt; 
-              &lt;header&gt; 
-              &lt;/header&gt;
+              &lt;body&gt; 
+                &lt;header&gt; 
+                &lt;/header&gt;
 
-              &lt;nav&gt; 
-              &lt;/nav&gt;	
+                &lt;nav&gt; 
+                &lt;/nav&gt;	
 
-              &lt;article&gt; 
-                &lt;section&gt;
-                &lt;/section&gt; 
-              &lt;/article&gt;	  
+                &lt;article&gt; 
+                  &lt;section&gt;
+                  &lt;/section&gt; 
+                &lt;/article&gt;	  
 
-              &lt;footer&gt; 
-              &lt;/footer&gt;
-            &lt;/body&gt; 
-          &lt;/html&gt;
+                &lt;footer&gt; 
+                &lt;/footer&gt;
+              &lt;/body&gt; 
+            &lt;/html&gt;
           </code>
 	    </pre> 
       </section>
@@ -170,6 +170,43 @@
 
       <section>
         <h3> Les images </h3> 
+        <p>&lt;img src="chemin et nom de l'image" alt="texte si l'image ne s'affiche pas"&gt; </p> 
+      </section>
+      <section>
+        <h3> Les tableaux </h3> 
+        <p>En html  un tableau est un empilement de lignes comportant des cellules. </p> 
+        <p>Les trois balises à connaitre sont : </p> 
+	    <ul> 
+	      <li> &lt;table&gt; creation du tableau </li>
+          <li> &lt;tr&gt; ajout d'une ligne </li>
+          <li> &lt;td&gt; ajout d'une cellule </li>
+	    </ul>
+        <p>Par exemple:</p> 
+	    <pre> 
+          <code>
+            &lt;table&gt;
+              &lt;tr&gt;
+                &lt;td&gt;A&lt;/td&gt;
+                &lt;td>B&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;C&lt;/td&gt;
+                &lt;td&gt;D&lt;/td&gt;
+              &lt;/tr&gt;
+			&lt;/table&gt;
+          </code>
+	    </pre> 
+        <p>nous donne le tableau suivant:</p> 
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>D</td>
+              </tr>
+			</table>
       </section>
     </article>
 	
