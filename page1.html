@@ -141,7 +141,7 @@
         <p> Une liste de définition se trouve entre les balises &lt;dl&gt; ... &lt;/dl&gt;:  </p>     
         <dl> 
           <dt> Le terme défini (chaque élément entre balises &lt;dt&gt; ... &lt;/dt&gt;).</dt>
-          <dd>La définition(chaque élément entre balises &lt;dd&gt; ... &lt;/dd&gt;).</dt></dd>
+          <dd>La définition (chaque élément entre balises &lt;dd&gt; ... &lt;/dd&gt;).</dt></dd>
         </dl> 
       </section>
 
@@ -232,10 +232,14 @@
             &lt;table&gt;
               &lt;caption&gt; La légende &lt;/caption&gt;
               &lt;thead&gt
-                &lt;th rowspan="3"&gt; &lt;/th&gt;
+                &lt;tr&gt;
+                  &lt;th rowspan="3"&gt; &lt;/th&gt;
+                &lt;/tr&gt;
               &lt;/thead&gt
               &lt;foot&gt
+                &lt;tr&gt;
                 &lt;th&gt; &lt;/th&gt;
+                &lt;/tr&gt;
               &lt;/foot&gt
               &lt;tr&gt;
                 &lt;td&gt;A&lt;/td&gt;
@@ -253,10 +257,14 @@
         <table>
           <caption>La légende du tableau</caption>       
           <thead>
-            <th rowspan="3">Entête</th>
+            <tr>
+              <th rowspan="3">Entête</th>
+            </td>
           </thead>
           <tfoot>
-            <th rowspan="3">Pied</th>
+            <tr>
+              <th rowspan="3">Pied</th>
+            </td>
           </tfoot>
           <tr>
             <td>A</td>
