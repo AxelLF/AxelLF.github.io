@@ -19,104 +19,103 @@
 	</aside>
 	
 	<h1> HTML </h1>
-    <section id="structureHTML">  
-      <h2> Structure de base </h2> 
-      <p> html fonctionne avec des balises dans des chevrons: &lt;balise&gt;. On distingue deux types de balises: les balises ouvrantes et fermantes par paires et les balises auto-fermantes dites orphelines.</p> 
-	  <p> La première ligne donne la version d'html utlisée. HTML5 est obtenu avec &lt;!doctype html&gt;.    </p> 
-	  <p> Le contenu d'un document html est contenu dans la balise &lt;html&gt;.   </p>   
-	  <p> Un document html doit contenir une entête &lt;head&gt; contenant les méta-informations du document et un corps &lt;body&gt; pour le contenu.  </p> 	  
-	  <p> Le corps du document peut contenir jusqu'à 6 niveaux de titres imbriqués. Ces derniers sont définis par des balises du type &lt;h1&gt; ... &lt;/h1&gt;. </p> 
-	  <p> La structure de base est donc la suivante:  </p> 
+    <article id="structureHTML">  
+      <section>
+        <h2> Structure de base </h2> 
+        <p> html fonctionne avec des balises dans des chevrons: &lt;balise&gt;. On distingue deux types de balises: les balises ouvrantes et fermantes par paires et les balises auto-fermantes dites orphelines.</p> 
+	    <p> La première ligne donne la version d'html utlisée. HTML5 est obtenu avec &lt;!doctype html&gt;.    </p> 
+	    <p> Le contenu d'un document html est contenu dans la balise &lt;html&gt;.   </p>   
+	    <p> Un document html doit contenir une entête &lt;head&gt; contenant les méta-informations du document et un corps &lt;body&gt; pour le contenu.  </p> 	  
+	    <p> Le corps du document peut contenir jusqu'à 6 niveaux de titres imbriqués. Ces derniers sont définis par des balises du type &lt;h1&gt; ... &lt;/h1&gt;. </p> 
+	    <p> La structure de base est donc la suivante:  </p> 
 	 
-	  <pre> 
-        <code>
-        &lt;!doctype html&gt; 
-        &lt;html&gt;
-          &lt;head&gt;
-            &lt;meta charset="utf-8" /&gt;
-            &lt;title&gt;  Titre du document &lt;/title&gt;  
+	    <pre> 
+          <code>
+            &lt;!doctype html&gt; 
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;meta charset="utf-8" /&gt;
+                &lt;title&gt;  Titre du document &lt;/title&gt;  
+		  	
+                Méta-informations
 			
-            Méta-informations
+              &lt;/head&gt; 
+		  
+              &lt;body&gt; 
+		  
+                &lt;h1&gt; Titre de niveau 1 &lt;/h1&gt;
+		  
+                Contenu du niveau 1.
+		  
+                &lt;h2&gt; Titre de niveau 2 &lt;/h2&gt;
+                &lt;h3&gt; Titre de niveau 3 &lt;/h3&gt;
+                &lt;h4&gt; Titre de niveau 4 &lt;/h4&gt;
+                &lt;h5&gt; Titre de niveau 5 &lt;/h5&gt;
+                &lt;h6&gt; Titre de niveau 6 &lt;/h6&gt;
 			
-          &lt;/head&gt; 
-		  
-          &lt;body&gt; 
-		  
+              &lt;/body&gt; 
+            &lt;/html&gt;
+          </code>
+	    </pre> 
+
+	    <p> Le corps du document peut avoir différents contenus <em>(images, texte,...)</em>. Le texte peut être affiché sous forme de paragraphes définis en html par les balises &lt;p&gt; ... &lt;p&gt;. Pour afficher un texte formaté on utilise les balises &lt;pre&gt; ... &lt;pre&gt;, celles-ci peuvent inclure des balises &lt;code&gt; ... &lt;code&gt; pour indiquer que l'on écrit du code informatique.  </p>  
+	    <p> Les balises &lt;h&gt; et  &lt;p&gt; sont des éléments "blocs" <em>(ils s'affichent les uns en dessous des autres, dans le bloc le contenu essaye d'occuper tout l'espace disponible)</em>. Les autres éléments sont dis "en ligne"</em> (ils s'affichent les uns à la suite des autres)</em>.  </p> 
+      </section>
+
+      <section>	
+        <h2> Sectionnement du contenu </h2> 
+        <p> Le contenu d'une page html peut être réparti dans différentes sections afin d'avoir une structure logique. Il s'agit ici d'une structure sémantique. </p>
+        <p> Ces sections sont les suivantes : </p>
+	    <ul> 
+	      <li> &lt;header&gt; pour du contenu en entête. </li>
+	      <li> &lt;nav&gt; pour une section ayant des liens vers d'autres pages ou vers une autre section de cette page. </li>
+	      <li> &lt;aside&gt; pour une section dont le contenu est séparé de la structure principale.  </li>
+          <li> &lt;article&gt; et &lt;section&gt; pour  </li>
+          <li> &lt;footer&gt; pour le pied de page de la section. </li>
+	    </ul>
+
+	    <pre> 
+          <code>
+          &lt;!doctype html&gt; 
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;meta charset="utf-8" /&gt;
+              &lt;title&gt;  Titre du document &lt;/title&gt;  
+			
+              Méta-informations
+			
+            &lt;/head&gt; 
+
             &lt;h1&gt; Titre de niveau 1 &lt;/h1&gt;
 		  
-            Contenu du niveau 1.
-		  
-            &lt;h2&gt; Titre de niveau 2 &lt;/h2&gt;
-            &lt;h3&gt; Titre de niveau 3 &lt;/h3&gt;
-            &lt;h4&gt; Titre de niveau 4 &lt;/h4&gt;
-            &lt;h5&gt; Titre de niveau 5 &lt;/h5&gt;
-            &lt;h6&gt; Titre de niveau 6 &lt;/h6&gt;
-			
-          &lt;/body&gt; 
-        &lt;/html&gt;
-        </code>
-	  </pre> 
-	
+            &lt;body&gt; 
+              &lt;header&gt; 
 
+             &lt;/header&gt;
 
-	  <p> Le corps du document peut avoir différents contenus <em>(images, texte,...)</em>. Le texte peut être affiché sous forme de paragraphes définis en html par les balises &lt;p&gt; ... &lt;p&gt;. Pour afficher un texte formaté on utilise les balises &lt;pre&gt; ... &lt;pre&gt;, celles-ci peuvent inclure des balises &lt;code&gt; ... &lt;code&gt; pour indiquer que l'on écrit du code informatique.  </p>  
-	  <p> Les balises &lt;h&gt; et  &lt;p&gt; sont des éléments "blocs" 
-		<em>(ils s'affichent les uns en dessous des autres, dans le bloc le contenu essaye d'occuper tout l'espace disponible)</em>. Les autres éléments sont dis "en ligne"</em> (ils s'affichent les uns à la suite des autres)</em>.  
-	  </p> 
+              &lt;nav&gt; 
 
+              &lt;/nav&gt;	3
 
-	
-      <h2> Sectionnement du contenu </h2> 
-      <p> Le contenu d'une page html peut être réparti dans différentes sections afin d'avoir une structure logique. Il s'agit ici d'une structure sémantique. </p>
-      <p> Ces sections sont les suivantes : </p>
-	  <ul> 
-	    <li> &lt;header&gt; pour du contenu en entête. </li>
-	    <li> &lt;nav&gt; pour une section ayant des liens vers d'autres pages ou vers une autre section de cette page. </li>
-	    <li> &lt;aside&gt; pour une section dont le contenu est séparé de la structure principale.  </li>
-        <li> &lt;article&gt; et &lt;section&gt; pour  </li>
-        <li> &lt;footer&gt; pour le pied de page de la section. </li>
-	  </ul>
+              &lt;article&gt; 
+                &lt;section&gt;
+                &lt;/section&gt; 
+              &lt;/article&gt;	  
 
+              &lt;footer&gt; 
 
-	  <pre> 
-        <code>
-        &lt;!doctype html&gt; 
-        &lt;html&gt;
-          &lt;head&gt;
-            &lt;meta charset="utf-8" /&gt;
-            &lt;title&gt;  Titre du document &lt;/title&gt;  
-			
-            Méta-informations
-			
-          &lt;/head&gt; 
+              &lt;/footer&gt;
+            &lt;/body&gt; 
+          &lt;/html&gt;
+          </code>
+	    </pre> 
+      </section>
+    </article>
 
-          &lt;h1&gt; Titre de niveau 1 &lt;/h1&gt;
-		  
-          &lt;body&gt; 
-            &lt;header&gt; 
-
-            &lt;/header&gt;
-
-            &lt;nav&gt; 
-
-            &lt;/nav&gt;	3
-
-            &lt;article&gt; 
-              &lt;section&gt;
-              &lt;/section&gt; 
-            &lt;/article&gt;	  
-
-            &lt;footer&gt; 
-
-            &lt;/footer&gt;
-          &lt;/body&gt; 
-        &lt;/html&gt;
-        </code>
-	  </pre> 
-    </section>
-
-	<section id="outilsHTML">
-  	  <h2>Mise en valeur du texte:</h2> 
+	<article id="outilsHTML">
+      <h2>Outils HTML:</h2> 
+		
+  	  <h3>Mise en valeur du texte:</h3> 
 	  <p> Il est possible de faire ressortir du texte suivant trois degrés d'importance. </p>
 	  <p> Pour mettre un texte <em>un peu en valeur</em> on utilise:  <strong>&lt;em&gt; ... &lt;/em&gt;</strong>.</p>
 	  <p> Pour mettre un texte <strong>bien en valeur</strong> on utilise:  <strong>&lt;strong&gt; ... &lt;/strong&gt;</strong>.</p> 
@@ -125,7 +124,7 @@
 	  <p> <mark>Attention:</mark> Les balises &lt;br&gt; et &lt;hr&gt; sont des balises héritées des premières versions d'html. Ne pas les utiliser.</p>
 	
 	
-	  <h2> Les listes </h2> 
+	  <h3> Les listes </h3> 
 	  <p> Il existe trois types de liste, ordonnées, désordonnées et les listes de définition. Celles-ci ont la structure suivante:</p>
 	  <p> Une liste ordonnée (entre balises &lt;ol&gt; ... &lt;ol&gt;):</p>   
 	  <ol> 
@@ -148,7 +147,10 @@
 	    <dt> Le terme défini (chaque élément entre balises &lt;dt&gt; ... &lt;dt&gt;).</dt>
         <dd>La définition(chaque élément entre balises &lt;dd&gt; ... &lt;dd&gt;).</dt></dd>
 	  </dl> 
-    </section>
+
+      <h3> Les liens</h3> 
+
+    </article>
 	
 	    <footer>
     
