@@ -18,7 +18,7 @@
 	
 	</aside>
 
-    <h1> HTML </h1> 	
+    <h1> Introduction à HTML </h1> 	
 	
     <article id="structureHTML">
     <h2> Structure d'un document html</h2>  
@@ -108,7 +108,7 @@
     </article>
 
 	<article id="outilsHTML">
-      <h3>Outils HTML:</h3> 
+      <h2>Outils HTML:</h2> 
 
       <section>			
   	    <h3>Mise en valeur du texte:</h3> 
@@ -170,14 +170,16 @@
 
       <section>
         <h3> Les images </h3> 
+        <p> Pour incorporer une image dans le document:<p>
         <p>&lt;img src="chemin et nom de l'image" alt="texte si l'image ne s'affiche pas"&gt; </p> 
       </section>
+
       <section>
         <h3> Les tableaux </h3> 
         <p>En html  un tableau est un empilement de lignes comportant des cellules. </p> 
         <p>Les trois balises à connaitre sont : </p> 
 	    <ul> 
-	      <li> &lt;table&gt; creation du tableau </li>
+	      <li> &lt;table&gt; création du tableau </li>
           <li> &lt;tr&gt; ajout d'une ligne </li>
           <li> &lt;td&gt; ajout d'une cellule </li>
 	    </ul>
@@ -207,13 +209,15 @@
                <td>D</td>
              </tr>
            </table>
+
         <h4> Caractéristiques d'un tableau: </h4>
+
         <p>La balise qui définit l'en-tête d'un tableau est &lt;thead&gt;</p> 
         <p>La balise qui définit le pied d'un tableau est &lt;tfoot&gt;</p> 
         <p>La balise qui définit une cellule d'entête ou de pied est &lt;th&gt;, celle-ci peut être utilisée dans les autres lignes du tableau.</p> 
         <p>Pour fusionner des cellules dans une même ligne on utilise l'attribut "rowspan"</p> 
         <p>Pour fusionner des cellules sur plusieurs lignes on utilise l'attribut "colspan"</p> 
-        <p>Pour ajouter une légende on utilise &lt;caption&gt;, cet élément doit être placé en première ligne.</p> 
+        <p>Pour ajouter une légende on utilise &lt;caption&gt;, cet élément doit être placé en première ligne. A noter que l'affichage par défaut diffère selon le navigateur. </p> 
 
         <p>Si on reprends le tableau défini ci-dessus celà donne:</p> 
 	    <pre> 
@@ -238,7 +242,7 @@
           </code>
 	    </pre> 
         <table>
-          <caption>"La légende du tableau"</caption>       
+          <caption>La légende du tableau</caption>       
           <thead>
             <th rowspan="2">Entête</th>
           </thead>
@@ -254,13 +258,12 @@
             <td>D</td>
           </tr>
         </table>
-        <p>A noter qu'il est possible de regrouper des colonnes en utilisant&lt;colgroup&gt; et &lt;col&gt;. Cette commande doit être placée en première ligne ou après caption.</p> 
+        <p>A noter qu'il est possible de regrouper des colonnes en utilisant &lt;colgroup&gt; et &lt;col&gt;. Cette commande doit être placée en première ligne ou après caption.</p> 
+
       </section>
     </article>
 	
 	<footer>  
     </footer>
- 
-
   </body>
 </html> 
