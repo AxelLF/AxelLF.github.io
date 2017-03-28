@@ -14,11 +14,11 @@
 	<a href="index.html">Lien vers index</a>
     </nav>
 	
-    <side>
+    <aside>
 	
-	</side>
+	</aside>
 	
-	<h1> Structure sémantique </h1>
+	<h1> HTML </h1>
     <section>
       
       <h2> Structure de base </h2> 
@@ -62,7 +62,47 @@
 	  <p> Les balises &lt;h&gt; et  &lt;p&gt; sont des éléments "blocs" 
 		<em>(ils s'affichent les uns en dessous des autres, dans le bloc le contenu essaye d'occuper tout l'espace disponible)</em>. Les autres éléments sont dis "en ligne"</em> (ils s'affichent les uns à la suite des autres)</em>.  
 	  </p> 
-	
+
+		
+      <h2> Sectionnement du contenu </h2> 
+      <p> Le contenu d'une page html peut être réparti dans différentes sections afin d'avoir une structure logique. Il s'agit ici d'une structure sémantique. </p>
+	  <pre> 
+        <code>
+        &lt;!doctype html&gt; 
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;meta charset="utf-8" /&gt;
+            &lt;title&gt;  Titre du document &lt;/title&gt;  
+			
+            Méta-informations
+			
+          &lt;/head&gt; 
+
+          &lt;h1&gt; Titre de niveau 1 &lt;/h1&gt;
+		  
+          &lt;body&gt; 
+            &lt;header&gt; 
+            &lt;/header&gt;
+
+            &lt;nav&gt; 
+            &lt;/nav&gt;		  
+
+            &lt;footer&gt; 
+            &lt;/footer&gt;
+
+            &lt;article&gt; 
+              &lt;section&gt;
+              &lt;/section&gt; 
+            &lt;/article&gt;
+
+            
+		 
+			
+          &lt;/body&gt; 
+        &lt;/html&gt;
+        </code>
+	  </pre> 
+
   	  <h2>Mise en valeur du texte:</h2> 
 	  <p> Il est possible de faire ressortir du texte suivant trois degrés d'importance. </p>
 	  <p> Pour mettre un texte <em>un peu en valeur</em> on utilise:  <strong>&lt;em&gt; ... &lt;/em&gt;</strong>.</p>
