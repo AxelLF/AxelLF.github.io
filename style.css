@@ -6,4 +6,6 @@
 
 .navigation{
     background-color:#B0C4DE;
+    width: auto;
+    max-height: none;
 }
