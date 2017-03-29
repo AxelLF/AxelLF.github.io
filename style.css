@@ -1,11 +1,14 @@
 .box{
-    height:500px;
     width: 150px;
     display:inline-block;
 }
 
 .navigation{
     background-color:#B0C4DE;
-    width: auto;
-    max-height: none;
+    width: 200px;
+}
+
+.middle{
+    background-color:#B0C4DE;
+    width: 200px;
 }
