@@ -1,0 +1,9 @@
+.box{
+    height:150px;
+    width: 150px;
+    display:inline-block;
+}
+
+.navigation{
+    background-color:#B0C4DE;
+}
