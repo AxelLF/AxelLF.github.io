@@ -1,14 +1,40 @@
-.box{
+.boite{
     width: 150px;
     display:inline-block;
+    /*display: flex;*/
+    padding: 10px
 }
 
 .navigation{
     background-color:#B0C4DE;
     width: 200px;
+   /* height: 500px;*/
+    position: relative;
+    left: 15px;
+    top : 34px;
 }
 
-.middle{
-    background-color:#B0C4DE;
-    width: 200px;
+.contenu{
+    background-color:Aliceblue;
+    border: 1px solid black;
+    width: 1000px;
+    position: relative;
+    left: 250px;
+    top: -551px;
 }
+
+.header{
+    background-color:#B0C4DE;
+    text-align:center;
+}
+
+.aside{
+    border: 1px solid black;
+    width: 200px;
+    height: 500px;
+    text-align:center;
+    position: relative;
+    left: 1300px;
+    top: -50px;
+}
+
