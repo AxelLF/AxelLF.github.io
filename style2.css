@@ -10,48 +10,37 @@
 .navigation{
     width: 225px;
     text-align: left;
-    height: 400px;
-    position: fixed;
-    left: 10px;
-    top : 350px;
+    display: flex; /* or inline-flex */
 }
 
 .aside{
     width: 200px;
     height: 400px;
     text-align:center;
-    position: fixed;
-    left: 1280px;
-    top : 350px;
+    display: flex; /* or inline-flex */
 }
 
 .main{
-    position: absolute;
-    left: 10px;
-    top : 315px;
-    height:100%;
-    height:300em;
-    width:1270px;
+    display: flex; /* or inline-flex */
+    flex-flow: row wrap;
+    flex-basis: 20em;
+    justify-content: space-around;
 }
 
 
 .lateralG{
     background-color:white;
-    width: 250px;
-    border: 1px solid black;
     text-align: left;
-    position: absolute;
-    height:100%;
+    display: flex; /* or inline-flex */
+   flex-basis: 15em;
+
 }
 
 .lateralD{
     background-color:white;
-    width: 250px;
-    border: 1px solid black;
     text-align: left;
-    position: relative;
-    height:100%;
-    left:1249px;
+    display: flex; /* or inline-flex */
+    flex-basis: 15em;
 }
 
 
@@ -63,14 +52,15 @@
 }
 
 
+
+
 .contenu{
     background-color:Aliceblue;
-    border: 1px solid black;
-    width: 960px;
-    position: absolute;
-    left: 260px;
-    padding: 10px;
-    Height : 100%
+    display: flex; /* or inline-flex */
+    justify-content: center;
+    flex-basis: 62em;
+    flex-direction: column;
+    padding: 10px
 }
 
 .header{
