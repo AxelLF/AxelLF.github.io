@@ -29,7 +29,29 @@
 
       <div class="boite contenu">
         <h1> Introduction à CSS </h1>  
-         <article id="structureHTML">
+         <article>
+          <h2>Qu'est ce que CSS ?</h2> 
+          <p> CSS pour (Cascading Style Sheets) est un autre langage qui vient compléter le HTML. Il va nous servir à gérer la forme de notre document.
+            Son principe de fonctionnement de base est celui d'imbrication de boîtes auquel on va ajouter des attributs. De base ces attributs peuvent être appliqués sur les balises déjà présentes dans notre document (par exemple <span class="balise">&lt;body&gt;</span>). 
+            Au besoin on peut ajouter des blocs définis par <span class="balise">&lt;div&gt;</span> pour des conteneurs ou par <span class="balise">&lt;span&gt;</span> pour des éléments en ligne. </p>
+          <p> Bien que les attributs puissent être modifiés directement dans une balise il est important de créer et de privilégier leur définition dans une feuille de style CSS externe.
+            Celui-ci peut être lié au fichier HTML via la ligne de commande : </p>
+          <p>&lt;<span class="balise">link</span> <span class="attribut">rel</span>="stylesheet" <span class="attribut">type</span>="text/css" <span class="attribut">href</span>="style.css"/&gt; </p>
+
+          <section>
+            <h3> Positionnement des blocs </h3> 
+          </section>
+          <p>La position d'un élément dans une page peut être définie par l'attribut <span class="attribut">position</span>.</p>
+          <p>Cet attribut peut prendre les valeurs suivantes:</p> 
+          <dl> 
+            <dt><span class="greenText">static</span></dt>
+            <dd>Comportement par défaut. L'élément est positionné dans le flux.</dd>
+            <dt><span class="greenText">static</span></dt>
+            <dt><span class="greenText">relative</span></dt>
+            <dt><span class="greenText">absolute</span></dt>
+            <dt><span class="greenText">fixed</span></dt>
+            <dt><span class="greenText">sticky</span></dt>
+
          </article>
 
 

@@ -1,6 +1,5 @@
 .boite{
     width: 150px;
-    /*display:inline-block;*/
     display: flex; /* or inline-flex */
     flex-direction: column;
     padding: 10px
@@ -10,14 +9,14 @@
 .navigation{
     width: 225px;
     text-align: left;
-    display: flex; /* or inline-flex */
+    position: fixed;
 }
 
 .aside{
     width: 200px;
     height: 400px;
     text-align:center;
-    display: flex; /* or inline-flex */
+    position: fixed;
 }
 
 .main{
@@ -32,17 +31,17 @@
     background-color:white;
     text-align: left;
     display: flex; /* or inline-flex */
-   flex-basis: 15em;
-
+    flex-basis: 15em;
+    border: 1px solid black;
 }
 
 .lateralD{
     background-color:white;
+    border: 1px solid black;
     text-align: left;
     display: flex; /* or inline-flex */
     flex-basis: 15em;
 }
-
 
 
 .pied{
@@ -52,15 +51,15 @@
 }
 
 
-
-
 .contenu{
     background-color:Aliceblue;
+    border: 1px solid black;
     display: flex; /* or inline-flex */
     justify-content: center;
     flex-basis: 62em;
     flex-direction: column;
-    padding: 10px
+    padding: 10px;
+
 }
 
 .header{
@@ -85,7 +84,12 @@ body{
    /* font-style: italic;*/
     font-size: 5em;
     color: #66e0ff;
+    position: absolute;
+    height:50px;
+    width: 100%;
+    text-align:center; 
 }
+
 
 .balise{
    color:red;
@@ -101,3 +105,12 @@ body{
    font-weight: bold;
 }
 
+.attribut{
+   color:blue;
+   font-weight: bold;
+}
+
+.greenText{
+   color:#00cc00;
+   font-weight: bold;
+}
