@@ -37,7 +37,7 @@
       <article id="structureHTML">
       <h2> Structure d'un document html</h2>  
         <section>
-          <h3> Structure de base </h3> 
+          <h3 class="italique"> Structure de base </h3> 
           <p> Html fonctionne avec des balises dans des chevrons: <span class="balise">&lt;balise&gt;</span>. On distingue deux types de balises, les balises ouvrantes et fermantes par paires et les balises auto-fermantes dites orphelines.</p> 
           <p> La première ligne donne la version d'html utlisée. HTML5 est obtenu avec <span class="balise">&lt;!doctype html&gt;</span>.</p> 
           <p> Le contenu d'un document html est contenu dans la balise <span class="balise">&lt;html&gt;</span>.</p>   
@@ -72,21 +72,21 @@
             </code>
           </pre> 
 
-          <p> Le corps du document peut avoir différents contenus (images, texte, liens, ...). Le texte peut être affiché sous forme de paragraphes définis en html par les balises &lt;p&gt; ... &lt;/p&gt;. Pour afficher un texte formaté on utilise les balises &lt;pre&gt; ... &lt;/pre&gt;, celles-ci peuvent inclure des balises &lt;code&gt; ... &lt;/code&gt; pour indiquer que l'on écrit du code informatique.  </p>  
-          <p> Les balises &lt;h&gt; et  &lt;p&gt; sont des éléments "blocs" (ils s'affichent les uns en dessous des autres et dans le bloc le contenu essaye d'occuper tout l'espace disponible). Les autres éléments sont dits "en ligne" (ils s'affichent les uns à la suite des autres).  </p> 
+          <p> Le corps du document peut avoir différents contenus (images, texte, liens, ...). Le texte peut être affiché sous forme de paragraphes définis en html par les balises   <span class="balise">&lt;p&gt; ... &lt;/p&gt;</span>  . Pour afficher un texte formaté on utilise les balises <span class="balise">&lt;pre&gt; ... &lt;/pre&gt;</span> , celles-ci peuvent inclure des balises &lt;code&gt; ... &lt;/code&gt; pour indiquer que l'on écrit du code informatique.  </p>  
+          <p> Les balises <span class="balise">&lt;h&gt;</span>  et  <span class="balise">&lt;p&gt;</span>  sont des éléments "blocs" (ils s'affichent les uns en dessous des autres et dans le bloc le contenu essaye d'occuper tout l'espace disponible). Les autres éléments sont dits "en ligne" (ils s'affichent les uns à la suite des autres).  </p> 
         </section>
 
         <section> 
-          <h3> Sectionnement du contenu </h3> 
+          <h3 class="italique"> Sectionnement du contenu </h3> 
           <p> Le contenu d'une page html peut être réparti dans différentes sections afin d'avoir une structure sémantique. </p>
           <p> Ces sections sont les suivantes : </p>
           <ul> 
-            <li> &lt;header&gt; pour du contenu en entête. </li>
-            <li> &lt;nav&gt; pour une section ayant des liens vers d'autres pages ou vers une autre section de cette page. </li>
-            <li> &lt;aside&gt; pour une section dont le contenu est séparé de la structure principale.  </li>
-            <li> &lt;article&gt; représente du contenu autonome dans un document.</li>
-            <li> &lt;section&gt; représente une section d'un document. Une section commence généralement avec un titre.  </li>
-            <li> &lt;footer&gt; pour le pied de page de la section. </li>
+            <li> <span class="balise">&lt;header&gt;</span>  pour du contenu en entête. </li>
+            <li> <span class="balise">&lt;nav&gt;</span>  pour une section ayant des liens vers d'autres pages ou vers une autre section de cette page. </li>
+            <li> <span class="balise">&lt;aside&gt;</span> pour une section dont le contenu est séparé de la structure principale.  </li>
+            <li> <span class="balise">&lt;article&gt;</span> représente du contenu autonome dans un document.</li>
+            <li> <span class="balise">&lt;section&gt;</span> représente une section d'un document. Une section commence généralement avec un titre.  </li>
+            <li> <span class="balise">&lt;footer&gt;</span> pour le pied de page de la section. </li>
           </ul>
 
           <pre> 
@@ -123,48 +123,48 @@
         <h2>Outils HTML:</h2> 
 
         <section>         
-          <h3>Mise en valeur du texte:</h3> 
+          <h3 class="italique">Mise en valeur du texte:</h3> 
           <p> Il est possible de faire ressortir du texte suivant trois degrés d'importance. </p>
           <p> Pour mettre un texte <em>un peu en valeur</em> on utilise:  <strong>&lt;em&gt; ... &lt;/em&gt;</strong>.</p>
           <p> Pour mettre un texte <strong>bien en valeur</strong> on utilise:  <strong>&lt;strong&gt; ... &lt;/strong&gt;</strong>.</p> 
           <p> Pour faire <mark> ressortir visuellement</mark> on utilise:  <strong>&lt;mark&gt; ... &lt;/mark&gt;</strong>.</p> 
-          <p> Sur la majorité des navigateurs &lt;em&gt; va mettre le texte en italique, &lt;strong&gt; va le mettre en gras et &lt;mark&gt; va le surligner. Par exemple:  </p>
-          <p> <mark>Attention:</mark> Les balises &lt;br&gt; et &lt;hr&gt; sont des balises héritées des premières versions d'html. Ne pas les utiliser.</p>
+          <p> Sur la majorité des navigateurs <span class="balise">&lt;em&gt;</span> va mettre le texte en italique, <span class="balise">&lt;strong&gt;</span> va le mettre en gras et <span class="balise">&lt;mark&gt;</span> va le surligner. Par exemple:  </p>
+          <p> <mark>Attention:</mark> Les balises <span class="balise">&lt;br&gt;</span> et <span class="balise">&lt;hr&gt;</span> sont des balises héritées des premières versions d'html. Ne pas les utiliser.</p>
         </section>        
 
         <section> 
-          <h3> Les listes </h3> 
+          <h3 class="italique"> Les listes </h3> 
           <p> Il existe trois types de liste: ordonnées, désordonnées et les listes de définition:</p>
-          <p> Une liste ordonnée se trouve entre les balises &lt;ol&gt; ... &lt;/ol&gt;:</p>   
+          <p> Une liste ordonnée se trouve entre les balises <span class="balise">&lt;&lt;ol&gt; ... &lt;/ol&gt;&gt;</span>:</p>   
           <ol> 
-            <li>Element ordonné 1 (chaque élément se trouve entre les balises &lt;li&gt; ... &lt;/li&gt;)</li> 
+            <li>Element ordonné 1 (chaque élément se trouve entre les balises <span class="balise">&lt;li&gt; ... &lt;/li&gt;</span>).</li> 
             <li>Element ordonné 2</li>
             <li>Element ordonné 2</li>
           </ol>
         
-          <p> Une liste désordonnée se trouve entre les balises &lt;ul&gt; ... &lt;/ul&gt;:  </p>  
+          <p> Une liste désordonnée se trouve entre les balises <span class="balise">&lt;ul&gt; ... &lt;/ul&gt;</span>:  </p>  
         
           <ul> 
-            <li>Element desordonné 1 (chaque élément se trouve entre les balises  &lt;li&gt; ... &lt;/li&gt;) </li>
+            <li>Element desordonné 1 (chaque élément se trouve entre les balises <span class="balise">&lt;li&gt; ... &lt;/li&gt;</span>).</li>
             <li>Element desordonné 2</li>
             <li>Element desordonné 3</li>
           </ul>   
       
-          <p> Une liste de définition se trouve entre les balises &lt;dl&gt; ... &lt;/dl&gt;:  </p>     
+          <p> Une liste de définition se trouve entre les balises <span class="balise">&lt;dl&gt; ... &lt;/dl&gt;</span> :  </p>     
           <dl> 
-            <dt> Le terme défini (chaque élément entre balises &lt;dt&gt; ... &lt;/dt&gt;).</dt>
-            <dd>Une définition (chaque élément entre balises &lt;dd&gt; ... &lt;/dd&gt;).</dd>
+            <dt> Le terme défini (chaque élément entre balises <span class="balise">&lt;dt&gt; ... &lt;/dt&gt;</span>).</dt>
+            <dd>Une définition (chaque élément entre balises <span class="balise">&lt;dd&gt; ... &lt;/dd&gt;</span>).</dd>
             <dd>Une deuxième définition.</dd>
 
           </dl> 
         </section>
 
         <section>
-          <h3> Hyperliens </h3> 
-          <p> La balise &lt;a&gt; permet de définir un hyperlien vers une autre page ou un autre endroit de la même page.</p>
+          <h3 class="italique"> Hyperliens </h3> 
+          <p> La balise <span class="balise">&lt;a&gt;</span> permet de définir un hyperlien vers une autre page ou un autre endroit de la même page.</p>
           <p> La structure d'un hyperlien est la suivante:</p>
           <p> &lt; a href="chemin"&gt; Nom du lien &lt;a&gt; </p>
-          <p> La balise &lt;a&gt; admet différents attributs:<p>
+          <p> La balise <span class="balise">&lt;a&gt;</span> admet différents attributs:<p>
           <ul> 
             <li> "href" indique la cible du lien. </li>
             <li> "target" indique où le lien doit ouvrir l'affichage et peut avoir des mots-clés.</li>
@@ -191,19 +191,19 @@
         </section>
 
         <section>
-          <h3> Les images </h3> 
+          <h3 class="italique"> Les images </h3> 
           <p> Pour incorporer une image dans le document:<p>
           <p>&lt;img src="chemin et nom de l'image" alt="texte si l'image ne s'affiche pas"&gt; </p> 
         </section>
 
         <section>
-          <h3> Les tableaux </h3> 
+          <h3 class="italique"> Les tableaux </h3> 
           <p>En html  un tableau est un empilement de lignes comportant des cellules. </p> 
           <p>Les trois balises à connaître sont : </p> 
           <ul> 
-            <li> &lt;table&gt; création du tableau </li>
-            <li> &lt;tr&gt; ajout d'une ligne </li>
-            <li> &lt;td&gt; ajout d'une cellule </li>
+            <li> <span class="balise">&lt;table&gt;</span> création du tableau </li>
+            <li> <span class="balise">&lt;tr&gt;</span> ajout d'une ligne </li>
+            <li> <span class="balise">&lt;td&gt;</span> ajout d'une cellule </li>
           </ul>
           <p>Par exemple:</p> 
           <pre> 
@@ -300,7 +300,9 @@
  
       <div class="lateralD">  
         <aside class=" boite aside" >  
-          <img src="chocapic.png" alt="pub chocapic"> 
+              <div class="scrat"> 
+                <img src="scrat.png" alt="image de scrat"> 
+              </div> 
         </aside>
       </div>
 

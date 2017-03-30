@@ -64,7 +64,6 @@
     position:relative;   
     top:30px;
     padding: 10px
-
 }
 
 
@@ -129,5 +128,10 @@ body{
 
 .gras{
    font-weight: bold;
+}
+
+.scrat{
+    position: fixed;
+    left: 1193px;
 }
 

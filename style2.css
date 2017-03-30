@@ -105,6 +105,11 @@ body{
    font-weight: bold;
 }
 
+.scrat{
+    position: fixed;
+    left: 1220px;
+}
+
 .attribut{
    color:blue;
    font-weight: bold;

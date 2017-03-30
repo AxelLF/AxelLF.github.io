@@ -39,18 +39,33 @@
           <p>&lt;<span class="balise">link</span> <span class="attribut">rel</span>="stylesheet" <span class="attribut">type</span>="text/css" <span class="attribut">href</span>="style.css"/&gt; </p>
 
           <section>
-            <h3> Positionnement des blocs </h3> 
-          </section>
+            <h3 class="italique"> Positionnement des blocs avec l'attribut "<span class="attribut">position</span>":</h3> 
+
           <p>La position d'un élément dans une page peut être définie par l'attribut <span class="attribut">position</span>.</p>
           <p>Cet attribut peut prendre les valeurs suivantes:</p> 
           <dl> 
             <dt><span class="greenText">static</span></dt>
             <dd>Comportement par défaut. L'élément est positionné dans le flux.</dd>
-            <dt><span class="greenText">static</span></dt>
             <dt><span class="greenText">relative</span></dt>
+            <dd>L'élément est placé par rapport à la position qu'il aurait en static. Il n'est pas supprimé du flux.</dd>
             <dt><span class="greenText">absolute</span></dt>
+            <dd>Il est positionné de façon absolue par rapport à la page. Peut avoir des résultats différents selon le navigateur. Il est supprimé du flux on ne conserve pas l'espace normalement occupé par l'élément.</dd>
             <dt><span class="greenText">fixed</span></dt>
+            <dd>L'élément ne change pas de position par rapport à la fenêtre. Ceci empêche le défilement lorsque la page est parcourue.</dd>
             <dt><span class="greenText">sticky</span></dt>
+            <dd>Définition du MDN : La position de la boîte est calculée en fonction des flux normaux (c'est-à-dire de la position dans le flux normal).
+              Ensuite, la boîte est décalée par rapport à la racine de son flux et par rapport à son bloc contenant..
+              Dans tous les cas, y compris avec les éléments table, cela n'affecte pas la position des boîtes subséquentes.
+              Lorsqu'une boîte B est positionnée avec sticky, la position de la boîte suivante est calculée comme si B n'était pas décalée.
+              Pour les éléments qui sont rattachés à des tableaux HTML, « position: sticky » aura le même effet que «  position: relative ».</dd>
+          </section>
+
+          <section>
+            <h3 class="italique"> Positionnement des blocs avec Flexbox:</h3> 
+          </section>
+
+
+
 
          </article>
 
@@ -60,7 +75,9 @@
 
       <div class="lateralD">  
         <aside class=" boite aside" >  
-          <img src="chocapic.png" alt="pub chocapic"> 
+              <div class="scrat"> 
+                <img src="scrat.png" alt="image de scrat"> 
+              </div>
         </aside>
       </div>
 
