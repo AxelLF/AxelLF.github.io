@@ -7,11 +7,12 @@
 
 .navigation{
     width: 225px;
-    text-align: left;
+    text-align: justify;
     height: 400px;
     position: fixed;
     left: 10px;
     top : 350px;
+    padding: 5px;
 }
 
 .aside{
@@ -64,6 +65,7 @@
     position:relative;   
     top:30px;
     padding: 10px
+    width:100%;
 }
 
 
@@ -116,6 +118,16 @@ body{
    font-weight: bold;
 }
 
+.selecteur{
+   color:	#FF7F50;
+   font-weight: bold;
+}
+
+.center{
+       text-align:center; 
+}
+
+
 .greenText{
    color:#00cc00;
    font-weight: bold;
@@ -135,3 +147,36 @@ body{
     left: 1193px;
 }
 
+.bubble{
+    position: relative;
+    top:-20px;
+		right:200px;
+}
+
+.TextBubble{
+    position: relative;
+    top:-480px;
+    left:-120px;
+    font-family:  Brush Script MT, cursive;
+    font-size: 5em;
+    color: #0077b3;
+    height:10px;
+    width: 100%;
+    text-align:center; 
+}
+
+.tiger{
+    position: relative;
+    top:200px;
+}
+
+.MainScrat{
+    position: relative;
+    top:-40px;
+    left: 500px;
+}
+
+.ListType1{
+    list-style-position: outside;
+    list-style-type: circle;
+}

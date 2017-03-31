@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>HTML</title> 
+ <!--  <link rel="stylesheet" type="text/css" href="reset.css"/> -->
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
+  </head>
+  
+  <body>
+
+    <header class="header">
+      <img src="encelade.jpg" alt="image d'illustration" >
+      <div class="header titre">
+        <p class="FontTitre">  HTML &amp; CSS </p>
+      </div>
+    </header>
+  
+    <div class="main"> 
+ 
+      <div class="lateralG">
+        <nav class="boite navigation">
+          <ul class="ListType1"> 
+            <li><a href="index.html">Retour vers index</a></li>
+            <li><a href="page1.html">Introduction à HTML</a></li>
+            <li><a href="page2Flex.html">Introduction à CSS </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class=" contenu">
+      <h1> Formulaire</h1>
+
+         <article>
+
+          <p>Il est possible de créer des formulaires en html grâce à la balise <span class="balise">&lt;form&gt;</span>. Par défault celle-ci doit obligatoirement avoir deux attributs: 
+          <span class="attribut">action</span> et <span class="attribut">method</span></p>
+          <p>Voici un exmple de formulaire:</p>
+
+
+         <div class="formulaire >
+            <form action="" method="post" >
+
+              <div>
+               <label for="name">Nom:<label/>
+               <input type="text" name="user-name" id="name"  class="boxsize" required>
+               <value="valeur1">
+              </div>
+
+              <div >
+               <label for="lastname">Prénom:<label/>
+               <input type="text" name="user-lastname" id="lastname" class="boxsize">
+              </div>
+
+              <div>
+               <label for="email">E-mail:<label/>
+               <input type="mail" name="user-mail" id="email" class="boxsize">
+              </div>
+
+              <div>
+               <label for="com">Commentaires:<label/>
+               <textarea type="user-comment" name="user-com" id="com" class="boxsize"> </textarea>
+              </div>
+
+               <button type="submit" class="button">Détruire la Terre</button>
+            </form>
+
+
+
+          </div>
+      <h2> test</h>
+
+          <div class="formulaire >
+            <form action="" method="post" >
+
+
+               <fieldset class="margin">
+                 <legend> La légende</legend>
+                 <label for="email">test1<label/>
+                 <input type="radio" name="test" value="test1" checked> 
+                 <label for="email">test2<label/>
+                 <input type="radio" name="test" value="test2">
+                 <label for="email">test3<label/>
+                 <input type="radio" name="test" value="test3"> 
+               </fieldset>
+           
+              <div>
+                <select name="" class="margin">
+                  <option value="1">
+                    Choix n°1
+                  </option>
+                  <option value="2">
+                    Choix n°2
+                  </option>
+                  <option value="3">
+                    Choix n°3 (détruire la Terre)
+                  </option>
+                </select>
+              </div>
+
+              <select name="" multiple class="margin">
+                <optgroup label="group1">
+                  <option value="1">
+                    Choix n°1
+                  </option>
+                  <option value="2">
+                    Choix n°2
+                  </option>
+                </optgroup>
+                <option value="3">
+                  Choix n°3 (détruire la Terre)
+                </option>
+              </select>
+
+               <input type="date" name="user-date">
+            </form>
+          </div>
+
+      </div>
+
+      <div class="lateralD">  
+        <aside class=" boite aside" >  
+              <div class="scrat"> 
+                <img src="scrat.png" alt="image de scrat"> 
+              </div>
+        </aside>
+      </div>
+
+    </div>    
+
+
+    <!--  <footer>  
+    </footer>-->
+  </body>
+</html> 

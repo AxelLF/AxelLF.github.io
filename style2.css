@@ -107,7 +107,16 @@ body{
 
 .scrat{
     position: fixed;
-    left: 1220px;
+    left: 1222px;
+}
+
+.selecteur{
+   color:	#FF7F50;
+   font-weight: bold;
+}
+
+.center{
+       text-align:center; 
 }
 
 .attribut{
@@ -119,3 +128,50 @@ body{
    color:#00cc00;
    font-weight: bold;
 }
+
+.formulaire{
+  border: 1px solid black;
+  display: flex; 
+  flex-direction: column; 
+  line-height: 20px;
+  font-weight: bold;
+  text-align: left;
+  /*flex-basis: 18em;*/
+  padding: 20px;
+  width: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height:20%;
+}
+
+
+.button{
+  width: 50%;
+  margin: 10px 0px;
+  height: 30px;
+  font-weight: bold;
+  color: red;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image:   linear-gradient(#0000ff,#00cc00)
+}
+
+.button:hover {
+   background-image:   linear-gradient(#00cc00,#0000ff)
+}
+
+
+.boxsize{
+  display: flex; 
+  justify-content: flex-end;
+  width: 100%;
+  line-height: 20px;
+}
+
+.margin{
+  margin: 10px 0px;
+}
+
+
+
+
+
