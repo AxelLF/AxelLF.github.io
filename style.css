@@ -155,8 +155,7 @@ body{
 
 .TextBubble{
     position: relative;
-    top:-480px;
-    left:-120px;
+    top:-380px;
     font-family:  Brush Script MT, cursive;
     font-size: 5em;
     color: #0077b3;

@@ -1,6 +1,6 @@
 .boite{
     width: 150px;
-    display: flex; /* or inline-flex */
+    display: flex;
     flex-direction: column;
     padding: 10px
 }
@@ -20,7 +20,7 @@
 }
 
 .main{
-    display: flex; /* or inline-flex */
+    display: flex; 
     flex-flow: row wrap;
     flex-basis: 20em;
     justify-content: space-around;
@@ -30,7 +30,7 @@
 .lateralG{
     background-color:white;
     text-align: left;
-    display: flex; /* or inline-flex */
+    display: flex; 
     flex-basis: 15em;
     border: 1px solid black;
 }
@@ -39,7 +39,7 @@
     background-color:white;
     border: 1px solid black;
     text-align: left;
-    display: flex; /* or inline-flex */
+    display: flex;
     flex-basis: 15em;
 }
 
@@ -54,7 +54,7 @@
 .contenu{
     background-color:Aliceblue;
     border: 1px solid black;
-    display: flex; /* or inline-flex */
+    display: flex; 
     justify-content: center;
     flex-basis: 62em;
     flex-direction: column;

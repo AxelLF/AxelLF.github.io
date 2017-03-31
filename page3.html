@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>HTML</title> 
- <!--  <link rel="stylesheet" type="text/css" href="reset.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css"/> -->
     <link rel="stylesheet" type="text/css" href="style2.css"/>
   </head>
   
@@ -17,7 +17,7 @@
     </header>
   
     <div class="main"> 
- 
+
       <div class="lateralG">
         <nav class="boite navigation">
           <ul class="ListType1"> 
@@ -31,99 +31,98 @@
       <div class=" contenu">
       <h1> Formulaire</h1>
 
-        <article>
-
-          <pre class="stylepre">Il est possible de créer des formulaires en html grâce à la balise <span class="balise">&lt;form&gt;</span>. 
+      <article>
+        <pre class="stylepre">Il est possible de créer des formulaires en html grâce à la balise <span class="balise">&lt;form&gt;</span>. 
 Par défault celle-ci doit obligatoirement avoir deux attributs:  <span class="attribut">action</span> et <span class="attribut">method</span>.
 <span class="attribut">action</span> : URL pour l'envoi des données.
 <span class="attribut">method</span> : La façon dont les données sont envoyées sur le serveur (entête ou corps). Elle prend la valeur <span class="greenText">get</span> ou <span class="greenText">post</span>.
 
 Voici un exemple de formulaire:</pre>
 
+        <div class="formulaire" >
+          <form action="" method="post" >
+            <div>
+              <label for="name">Nom:<label/>
+              <input type="text" name="user-name" id="name"  class="boxsize" required>
+              <value="valeur1">
+            </div>
+            <div >
+              <label for="lastname">Prénom:<label/>
+              <input type="text" name="user-lastname" id="lastname" class="boxsize">
+            </div>
+            <div>
+              <label for="email">E-mail:<label/>
+              <input type="mail" name="user-mail" id="email" class="boxsize">
+            </div>
+            <div>
+              <label for="com">Commentaires:<label/>
+              <textarea type="user-comment" name="user-com" id="com" class="boxsize"> </textarea>
+            </div>
 
-         <div class="formulaire >
-            <form action="" method="post" >
-
-              <div>
-               <label for="name">Nom:<label/>
-               <input type="text" name="user-name" id="name"  class="boxsize" required>
-               <value="valeur1">
-              </div>
-
-              <div >
-               <label for="lastname">Prénom:<label/>
-               <input type="text" name="user-lastname" id="lastname" class="boxsize">
-              </div>
-
-              <div>
-               <label for="email">E-mail:<label/>
-               <input type="mail" name="user-mail" id="email" class="boxsize">
-              </div>
-
-              <div>
-               <label for="com">Commentaires:<label/>
-               <textarea type="user-comment" name="user-com" id="com" class="boxsize"> </textarea>
-              </div>
-
-               <button type="submit" class="button">Détruire la Terre</button>
-            </form>
-          </div>
+            <button type="submit" class="button">Détruire la Terre</button>
+          </form>
+        </div>
 
         <p> Les champs de saisie sont créés avec la balise <span class="balise">&lt;input&gt;</span>, elle peut avoir de nombreux attributs dont la liste complète est disponible <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input" target="_blank">ici</a>.</p>
         <p>En voici quelque-uns : </p>
-                 <ul>
-                  <li> <span class="attribut">type</span>: le type de données attendues dans le champ de saisie (ex: text,email...)</li>
-                  <li> <span class="attribut">name</span>: Le nom du contrôle, envoyé avec les données lors de l'envoi du formulaire.</li>
-                  <li> <span class="attribut">id</span>: L'identifiant d'un élément, il doit être unique.</li>
-                 </ul>
+          <ul>
+            <li> <span class="attribut">type</span>: le type de données attendues dans le champ de saisie (ex: text,email...)</li>
+            <li> <span class="attribut">name</span>: Le nom du contrôle, envoyé avec les données lors de l'envoi du formulaire.</li>
+            <li> <span class="attribut">id</span>: L'identifiant d'un élément, il doit être unique.</li>
+          </ul>
+        <p>En voici quelque-uns : </p>
 
 
-      <h2> Formulaire avec choix</h2>
+        <h2> Formulaire avec choix</h2>
 
-          <div class="formulaire >
-            <form action="" method="post" >
+        <div class="formulaire">
 
-               <fieldset class="margin">
-                 <legend> La légende</legend>
-                 <ul class="liststylenone">
-                  <li class="padding"><label for="email">choix1<label/>
-                  <input type="radio" name="test" value="choix1" checked> </li>
-                  <li class="padding"><label for="email">choix2<label/>
-                  <input type="radio" name="test" value="choix2"></li>
-                  <li class="padding"><label for="email">choix3<label/>
-                  <input type="radio" name="test" value="choix3"> </li>
-                 </ul>
-               </fieldset>
+          <form action="" method="post" >
+            <fieldset class="margin">
+              <legend> La légende</legend>
+              <ul class="liststylenone">
+                <li class="padding"><label for="email">choix1<label/>
+                <input type="radio" name="test" value="choix1" checked> </li>
+                <li class="padding"><label for="email">choix2<label/>
+                <input type="radio" name="test" value="choix2"></li>
+                <li class="padding"><label for="email">choix3<label/>
+                <input type="radio" name="test" value="choix3"> </li>
+              </ul>
+            </fieldset>
            
-              <div>
-                <select name="" class="margin">
-                  <option value="1">
-                    Choix n°1
-                  </option>
-                  <option value="2">
-                    Choix n°2
-                  </option>
-                  <option value="3">
+            <div>
+              <select name="" class="margin">
+                <option value="1">
+                   Choix n°1
+                </option>
+                <option value="2">
+                   Choix n°2
+                </option>
+                <option value="3">
                     Choix n°3 (détruire la Terre)
-                  </option>
-                </select>
-              </div>
+                </option>
+              </select>
+            </div>
 
-              <select name="" multiple class="margin">
-                <optgroup label="group1">
-                  <option value="1">
-                    Choix n°1 : Arme atomique
-                  </option>
-                  <option value="2">
-                    Choix n°2 : Virus
-                  </option>
-                </optgroup>
+
+            <fieldset class="margin">
+              <legend> Commande de destruction </legend>
+            <select name="" multiple class="margin">
+              <optgroup label="Non biologique:">
+                <option value="1">
+                  Choix n°1 : Arme atomique
+                </option>
+              <optgroup label="Biologique:">
+                <option value="2">
+                  Choix n°2 : Virus
+                </option>
                 <option value="3">
                   Choix n°3 : Justin Bieber
                 </option>
-              </select>
-
-               <input type="date" name="user-date">
+              </optgroup>
+            </select>
+            </fieldset>
+            <input type="date" name="user-date">
             </form>
           </div>
 
@@ -132,7 +131,7 @@ Voici un exemple de formulaire:</pre>
       <div class="lateralD">  
         <aside class=" boite aside" >  
               <div class="scrat"> 
-                <img src="scrat.png" alt="image de scrat"> 
+                <img src="Scrat.png" alt="image de scrat"> 
               </div>
         </aside>
       </div>
