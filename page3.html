@@ -37,7 +37,7 @@ Par défault celle-ci doit obligatoirement avoir deux attributs:  <span class="a
 <span class="attribut">action</span> : URL pour l'envoi des données.
 <span class="attribut">method</span> : La façon dont les données sont envoyées sur le serveur (entête ou corps). Elle prend la valeur <span class="greenText">get</span> ou <span class="greenText">post</span>.
 
-Voici un exemple de formulaire:</pre>
+Voici un exemple de formulaire simple:</pre>
 
         <div class="formulaire" >
           <form action="" method="post" >
@@ -67,19 +67,18 @@ Voici un exemple de formulaire:</pre>
         <p>En voici quelque-uns : </p>
           <ul>
             <li> <span class="attribut">type</span>: le type de données attendues dans le champ de saisie (ex: text,email...)</li>
-            <li> <span class="attribut">name</span>: Le nom du contrôle, envoyé avec les données lors de l'envoi du formulaire.</li>
-            <li> <span class="attribut">id</span>: L'identifiant d'un élément, il doit être unique.</li>
+            <li> <span class="attribut">name</span>: Le nom du contrôle, récupéré par le serveur lors de l'envoi du formulaire. Il donne de quel partie du formaulaire il s'agit. Il est indispensable.</li>
+            <li> <span class="attribut">id</span>: L'identifiant d'un élément, sert de clé, il doit être unique, c'est la valeur de "name".</li>
           </ul>
-        <p>En voici quelque-uns : </p>
-
 
         <h2> Formulaire avec choix</h2>
+        <p>Il est également possible de creer des formulaires avec choix: </p>
+
 
         <div class="formulaire">
 
           <form action="" method="post" >
-            <fieldset class="margin">
-              <legend> La légende</legend>
+            <fieldset class="margin backgroundFS">
               <ul class="liststylenone">
                 <li class="padding"><label for="email">choix1<label/>
                 <input type="radio" name="test" value="choix1" checked> </li>
@@ -104,27 +103,31 @@ Voici un exemple de formulaire:</pre>
               </select>
             </div>
 
-
             <fieldset class="margin">
               <legend> Commande de destruction </legend>
-            <select name="" multiple class="margin">
-              <optgroup label="Non biologique:">
-                <option value="1">
-                  Choix n°1 : Arme atomique
-                </option>
-              <optgroup label="Biologique:">
-                <option value="2">
-                  Choix n°2 : Virus
-                </option>
-                <option value="3">
-                  Choix n°3 : Justin Bieber
-                </option>
-              </optgroup>
-            </select>
+              <select name="" multiple class="margin">
+                <optgroup label="Non biologique:">
+                  <option value="1">
+                    Choix n°1 : Arme atomique
+                  </option>
+                </optgroup>
+                <optgroup label="Biologique:">
+                  <option value="2">
+                    Choix n°2 : Virus
+                  </option>
+                  <option value="3">
+                    Choix n°3 : Justin Bieber
+                  </option>
+                </optgroup>
+              </select>
             </fieldset>
             <input type="date" name="user-date">
             </form>
           </div>
+          <p>Le premier type à choix multiple avec des puces (ci-dessus) est obtenu grâce à l'attribut <span class="attribut">radio</span> avec la valeur <span class="greenText">radio</span>. </p>
+          <p>Le second type à choix multiple avec une liste déroulante est obtenu grâce à l'attribut <span class="attribut">select</span>. </p>
+          <p>Le troisième type à choix multiple avec une liste déroulante présente directement plusieurs choix avec "multiple". Dans cet exemple le choix sont regroupés dans des groupes grâce à la balise <span class="balise">&lt;optgroup&gt;</span>. </p>
+          <p>Enfin, le quatrième type propose de choisir une date. C'est une balise <span class="balise">&lt;input&gt;</span> avec un attribut <span class="attribut">type</span> qui a la valeur <span class="greenText">date</span>.</p>
 
       </div>
 
@@ -139,7 +142,8 @@ Voici un exemple de formulaire:</pre>
     </div>    
 
 
-    <!--  <footer>  
-    </footer>-->
+    <footer class="pied">  
+               <img src="pied.png" alt="image de pied"> 
+    </footer>
   </body>
 </html> 
