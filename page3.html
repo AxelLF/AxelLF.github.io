@@ -31,11 +31,14 @@
       <div class=" contenu">
       <h1> Formulaire</h1>
 
-         <article>
+        <article>
 
-          <p>Il est possible de créer des formulaires en html grâce à la balise <span class="balise">&lt;form&gt;</span>. Par défault celle-ci doit obligatoirement avoir deux attributs: 
-          <span class="attribut">action</span> et <span class="attribut">method</span></p>
-          <p>Voici un exmple de formulaire:</p>
+          <pre class="stylepre">Il est possible de créer des formulaires en html grâce à la balise <span class="balise">&lt;form&gt;</span>. 
+Par défault celle-ci doit obligatoirement avoir deux attributs:  <span class="attribut">action</span> et <span class="attribut">method</span>.
+<span class="attribut">action</span> : URL pour l'envoi des données.
+<span class="attribut">method</span> : La façon dont les données sont envoyées sur le serveur (entête ou corps). Elle prend la valeur <span class="greenText">get</span> ou <span class="greenText">post</span>.
+
+Voici un exemple de formulaire:</pre>
 
 
          <div class="formulaire >
@@ -64,24 +67,32 @@
 
                <button type="submit" class="button">Détruire la Terre</button>
             </form>
-
-
-
           </div>
-      <h2> test</h>
+
+        <p> Les champs de saisie sont créés avec la balise <span class="balise">&lt;input&gt;</span>, elle peut avoir de nombreux attributs dont la liste complète est disponible <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input" target="_blank">ici</a>.</p>
+        <p>En voici quelque-uns : </p>
+                 <ul>
+                  <li> <span class="attribut">type</span>: le type de données attendues dans le champ de saisie (ex: text,email...)</li>
+                  <li> <span class="attribut">name</span>: Le nom du contrôle, envoyé avec les données lors de l'envoi du formulaire.</li>
+                  <li> <span class="attribut">id</span>: L'identifiant d'un élément, il doit être unique.</li>
+                 </ul>
+
+
+      <h2> Formulaire avec choix</h2>
 
           <div class="formulaire >
             <form action="" method="post" >
 
-
                <fieldset class="margin">
                  <legend> La légende</legend>
-                 <label for="email">test1<label/>
-                 <input type="radio" name="test" value="test1" checked> 
-                 <label for="email">test2<label/>
-                 <input type="radio" name="test" value="test2">
-                 <label for="email">test3<label/>
-                 <input type="radio" name="test" value="test3"> 
+                 <ul class="liststylenone">
+                  <li class="padding"><label for="email">choix1<label/>
+                  <input type="radio" name="test" value="choix1" checked> </li>
+                  <li class="padding"><label for="email">choix2<label/>
+                  <input type="radio" name="test" value="choix2"></li>
+                  <li class="padding"><label for="email">choix3<label/>
+                  <input type="radio" name="test" value="choix3"> </li>
+                 </ul>
                </fieldset>
            
               <div>
@@ -101,14 +112,14 @@
               <select name="" multiple class="margin">
                 <optgroup label="group1">
                   <option value="1">
-                    Choix n°1
+                    Choix n°1 : Arme atomique
                   </option>
                   <option value="2">
-                    Choix n°2
+                    Choix n°2 : Virus
                   </option>
                 </optgroup>
                 <option value="3">
-                  Choix n°3 (détruire la Terre)
+                  Choix n°3 : Justin Bieber
                 </option>
               </select>
 

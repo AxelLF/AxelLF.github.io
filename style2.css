@@ -116,7 +116,7 @@ body{
 }
 
 .center{
-       text-align:center; 
+   text-align:center; 
 }
 
 .attribut{
@@ -159,6 +159,9 @@ body{
    background-image:   linear-gradient(#00cc00,#0000ff)
 }
 
+.alignLeft{
+  text-align: left;
+}
 
 .boxsize{
   display: flex; 
@@ -171,7 +174,16 @@ body{
   margin: 10px 0px;
 }
 
+.padding{
+  padding: 10px;
+}
 
+.liststylenone{
+  list-style-type: none;
+}
 
-
-
+.stylepre{
+  font-style: normal;
+  font-size:12pt;
+  font-family: "Times New Roman";
+}
