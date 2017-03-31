@@ -65,7 +65,7 @@
     position:relative;   
     top:30px;
     padding: 10px;
-    width:100%;
+    width:1480px;
     text-align:center;
 }
 
@@ -156,6 +156,12 @@ body{
     left: 1193px;
 }
 
+.scrat2{
+    position: relative;
+    right:10px;
+    top:-10px;
+}
+
 .bubble{
     position: relative;
     top:-20px;
@@ -189,4 +195,11 @@ body{
     list-style-type: circle;
 }
 
+.slideanim{
+  height: 100%;
+  width: 20%;
+  animation: 4s linear 0s infinite slideanim;
+}
+
+@keyframes slideanim{ from { margin-left:0%; } to { margin-left:104%; }  }
 
