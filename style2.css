@@ -5,7 +5,6 @@
     padding: 10px
 }
 
-
 .navigation{
     width: 225px;
     text-align: left;
@@ -26,7 +25,6 @@
     justify-content: space-around;
 }
 
-
 .lateralG{
     background-color:white;
     text-align: left;
@@ -42,7 +40,6 @@
     display: flex;
     flex-basis: 15em;
 }
-
 
 .pied{
     background-color:white;
@@ -74,6 +71,9 @@
 
 .header{
     text-align:center;
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 10px 0px;
 }
 
 body{
@@ -88,10 +88,8 @@ body{
     left: 10px;
 }
 
-
 .FontTitre{
     font-family:  Brush Script MT, cursive;
-   /* font-style: italic;*/
     font-size: 5em;
     color: #66e0ff;
     position: absolute;
@@ -100,12 +98,10 @@ body{
     text-align:center; 
 }
 
-
 .balise{
    color:red;
    font-weight: bold;
 }
-
 
 .italique{
    font-style: italic;
@@ -154,7 +150,6 @@ body{
   height:20%;
 }
 
-
 .button{
   width: 50%;
   margin: 10px 0px;
@@ -184,8 +179,6 @@ body{
    background-image:   linear-gradient(#00cc00,#0000ff);
    transform: scale(0);
 }
-
-
 
 .alignLeft{
   text-align: left;
@@ -232,3 +225,52 @@ body{
 }
 
 @keyframes slideanim{ from { margin-left:0%; } to { margin-left:104%; }  }
+
+table {
+ border-width:1px; 
+ border-style:solid; 
+ border-color:black;
+ width:20%;
+ border-collapse:collapse;
+ }
+
+td { 
+ border-width:1px;
+ border-style:solid; 
+ border-color:black;
+ text-align:center;
+ }
+
+.box-sommaire{
+  position:relative;
+  left:-20px;
+  background-color:#99b3e6;
+  margin: 5px 0px;
+  padding: 0px 5px;
+  line-height: 30px;
+  width: 100%;
+  transition: transform 1s;
+}
+
+.box-sommaire:hover{
+  background-color:#5c5cd6;
+  transform: scale(1.1 , 1.1);
+}
+
+.center{
+  text-align: center;
+}
+
+.box-sommaireT{
+  font-weight: bold;
+  position:relative;
+  left:-20px;
+  padding: 0px 5px;
+  background-color:#3366cc;
+  margin: 1px 0px;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+}
+
+.fleche::before {content: "\21AA";}

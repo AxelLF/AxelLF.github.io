@@ -1,23 +1,21 @@
 .boite{
     width: 150px;
-    /*display:inline-block;*/
     padding: 10px
 }
 
-
 .navigation{
-    width: 225px;
+    width: 260px;
     text-align: justify;
-    height: 400px;
+    height: 300px;
     position: fixed;
     left: 10px;
-    top : 350px;
+    top : 330px;
     padding: 5px;
 }
 
 .aside{
     width: 200px;
-    height: 400px;
+    height: 300px;
     text-align:center;
     position: fixed;
     left: 1280px;
@@ -27,7 +25,6 @@
 .main{
     position: relative;
     top : 160px;
-    height:100%;
     height:290em;
     width:1270px;
 }
@@ -42,7 +39,6 @@
     left: 2px;
     top:  -158px;
     padding: 10px;
-
 }
 
 .lateralD{
@@ -157,9 +153,8 @@ body{
 }
 
 .scrat2{
-    position: relative;
-    right:10px;
-    top:-10px;
+    position: absolute;
+    top:0px;
 }
 
 .bubble{
@@ -202,4 +197,58 @@ body{
 }
 
 @keyframes slideanim{ from { margin-left:0%; } to { margin-left:104%; }  }
+
+
+table {
+ border-width:1px; 
+ border-style:solid; 
+ border-color:black;
+ width:20%;
+ border-collapse:collapse;
+ }
+
+td { 
+ border-width:1px;
+ border-style:solid; 
+ border-color:black;
+ text-align:center;
+ }
+
+.liststylenone{
+  list-style-type: none;
+}
+
+.box-sommaire{
+  position:relative;
+  left:-20px;
+  background-color:#99b3e6;
+  margin: 5px 0px;
+  padding: 0px 5px;
+  line-height: 30px;
+  width: 100%;
+  transition: transform 1s;
+}
+
+.box-sommaire:hover{
+  background-color:#5c5cd6;
+  transform: scale(1.1 , 1.1);
+}
+
+.center{
+  text-align: center;
+}
+
+.box-sommaireT{
+  font-weight: bold;
+  position:relative;
+  left:-20px;
+  padding: 0px 5px;
+  background-color:#3366cc;
+  margin: 1px 0px;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+}
+
+.fleche::before {content: "\21AA";}
 

@@ -19,10 +19,20 @@
     <div class="main"> 
  
       <div class="lateralG">
+        <div class="scrat2"> 
+                <img src="scrat2.png" alt="image de scrat"> 
+        </div>
         <nav class="boite navigation">
-          <ul class="ListType1"> 
-            <li><a href="index.html">Retour vers index</a></li>
-            <li><a href="page1.html">Introduction à HTML</a></li>
+          <ul class="ListType1 liststylenone"> 
+            <li class="box-sommaireT"> <p>Menu:</p></li>
+            <li><a href="index.html"><div class="box-sommaire">Acceuil</div></a></li>
+            <li><a href="page1.html"><div class="box-sommaire">Introduction à HTML</div></a></li>
+            <li><a href="page1.html#structureHTML"><div class="box-sommaire"><span class="fleche">Structure de base</span></div></a></li>
+            <li><a href="page1.html#outilsHTML"><div class="box-sommaire"><span class="fleche">Outils HTML</span></div></a></li>
+            <li><a href="page2.html"><div class="box-sommaire">Introduction à CSS</div></a></li>
+            <li class="box-sommaireT"><p>Pages avec style FlexBox:</p></li>
+            <li><a href="page1Flex.html"><div class="box-sommaire">Introduction à HTML</div></a></li>
+            <li><a href="page3.html"><div class="box-sommaire">Les formulaires </div></a></li>
           </ul>
         </nav>
       </div>
@@ -61,14 +71,21 @@
               Dans tous les cas, y compris avec les éléments table, cela n'affecte pas la position des boîtes subséquentes.
               Lorsqu'une boîte B est positionnée avec sticky, la position de la boîte suivante est calculée comme si B n'était pas décalée.
               Pour les éléments qui sont rattachés à des tableaux HTML, « position: sticky » aura le même effet que «  position: relative ».</dd>
+          </dl> 
           </section>
 
           <section>
-            <h3 class="italique"> Positionnement des blocs avec Flexbox:</h3> 
+            <h2 class="italique"> Bordures :</h2> 
+            <p>L'attribut qui va permettre de modifier la bordure d'un bloc est <span class="attribut">border</span>. On peut modifier sa couleur, sa largeur et son style.</p>
+            <figure class="center">
+							<img src="styles_bordures.png" alt="Les différents styles de bordure"> 
+							<figcaption>Image provenant du site openclassroom.</figcaption>
+						</figure>
+            <p>L'attribut <span class="attribut">border</span> a quatre propriétés "top", "right", "bottom", et "left" permettant de choisir le coté que l'on souhaite modifier.
+						Cet attribut peut également être utilisé dans la confection des tableaux tels ceux présentés sur la <a href="page1.html#tableaux">page</a> précédente.</p>
+            <p> En plus de l'attribut <span class="attribut">border</span>, il existe également deux autres attributs <span class="attribut">margin</span> et <span class="attribut">padding</span>
+            représentant respectivement des marges extérieures et intérieures à la bordure.</p>
           </section>
-
-
-
 
          </article>
 
