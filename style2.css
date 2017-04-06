@@ -29,7 +29,7 @@
     background-color:white;
     text-align: left;
     display: flex; 
-    flex-basis: 15em;
+    flex-basis: 14em;
     border: 1px solid black;
 }
 
@@ -38,7 +38,7 @@
     border: 1px solid black;
     text-align: left;
     display: flex;
-    flex-basis: 15em;
+    flex-basis: 14em;
 }
 
 .pied{
@@ -113,7 +113,7 @@ body{
 
 .scrat{
     position: fixed;
-    left: 1222px;
+    left: 1234px;
 }
 
 .selecteur{
@@ -243,7 +243,7 @@ td {
 
 .box-sommaire{
   position:relative;
-  left:-20px;
+  left:-30px;
   background-color:#99b3e6;
   margin: 5px 0px;
   padding: 0px 5px;
@@ -264,7 +264,7 @@ td {
 .box-sommaireT{
   font-weight: bold;
   position:relative;
-  left:-20px;
+  left:-30px;
   padding: 0px 5px;
   background-color:#3366cc;
   margin: 1px 0px;
@@ -274,3 +274,5 @@ td {
 }
 
 .fleche::before {content: "\21AA";}
+
+
